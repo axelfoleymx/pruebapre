@@ -5,11 +5,11 @@ Rails.application.routes.draw do
 
   post 'pages/save_form'
 
-  get 'pages/z'
+  get 'pages/landing'
 
   get 'pages/see_users'
 
-  root 'pages#x'
+  root 'pages#landing'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -6,7 +6,9 @@ class PagesController < ApplicationController
       @usuarios = Usuario.all
   end
 
-  def z
+  def landing
+
+    render layout: "layout2"
   end
 
   def see_users
@@ -15,7 +17,7 @@ class PagesController < ApplicationController
   def save_form
 
     Usuario.create(name: params[:q], email: params[:l], age: params[:m])
-    redirect_to pages_y_path, notice: "El usuario fue guardado"
+    redirect_to pages_see_users_path, notice: "El usuario fue guardado"
 
   end
 
