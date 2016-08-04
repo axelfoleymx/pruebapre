@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: practicapre_production
-  username: practicapre
-  password: <%= ENV['PRACTICAPRE_DATABASE_PASSWORD'] %>
+  username: axel	
+  password: ITESMCEM93
