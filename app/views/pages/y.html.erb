@@ -1,2 +1,8 @@
-<h1>Pages#y</h1>
-<p>Find me in app/views/pages/y.html.erb</p>
+<h1><%= notice %></h1>
+
+<h2> Usuarios registrados: </h2>
+<% @usuarios.each do |x| %>
+<p> <%= x.name %> </p>
+<p> <%= x.email%> </p>
+<p> <%= x.age %> </p>
+<% end%>
