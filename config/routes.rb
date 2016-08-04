@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  get 'pages/x'
+  get 'pages#x'
 
-  get 'pages/y'
+  get 'pages#y'
 
-  post 'pages/save_form'
+  post 'pages#save_form'
 
-  get 'pages/landing'
+  get 'pages#landing'
 
-  get 'pages/see_users'
+  get 'pages#see_users'
 
   root 'pages#landing'
 
