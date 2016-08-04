@@ -3,7 +3,11 @@ Rails.application.routes.draw do
 
   get 'pages/y'
 
+  post 'pages/save_form'
+
   get 'pages/z'
+
+  get 'pages/see_users'
 
   root 'pages#x'
 

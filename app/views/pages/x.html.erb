@@ -1,10 +1,11 @@
 <h1>Axel Antonio López Loza </h1>
 <p>Find me in app/views/pages/x.html.erb</p>
 <form action="<%= pages_save_form_path %>" method="POST">
-
-    <input name="q">
-    <input name="l">
-    <input name="m">
+  <%= hidden_field_tag :authenticity_token,
+form_authenticity_token %>
+    <input placeholder="Nombre" name="q">
+    <input placeholder="E-mail" email="l">
+    <input placeholder="Edad" age="m">
     <input type="submit" value="Enviar">
 
   </form>
